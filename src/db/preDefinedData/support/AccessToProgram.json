@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Diksha Online Portal",
+      "mode": "Online",
+      "link": "https://diksha.gov.in/"
+    },
+    {
+      "name": "SWAYAM (Study Webs of Active Learning for Young Aspiring Minds)",
+      "mode": "Online",
+      "link": "https://swayam.gov.in/"
+    },
+    {
+      "name": "Television Broadcasts - Educational Channels",
+      "mode": "Offline",
+      "link": "N/A (Tune in to educational TV channels)"
+    },
+    {
+      "name": "Radio Broadcasts - Educational Programs",
+      "mode": "Offline",
+      "link": "N/A (Listen to educational radio programs)"
+    },
+    {
+      "name": "State Government Online Learning Platforms",
+      "mode": "Online",
+      "link": "Varies by state (Check your state's education department website)"
+    }
+]

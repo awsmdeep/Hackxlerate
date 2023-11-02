@@ -1,0 +1,26 @@
+{
+  "name": "hackxlerate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd ./config/dev.env node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd ./config/dev.env nodemon src/index.js",
+    "one": "env-cmd ./config/dev.env node src/db/preDefinedData/support/predef.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env-cmd": "^8.0.2",
+    "express": "^4.18.2",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.13.15"
+  },
+  "devDependencies": {
+    "axios": "^1.6.0",
+    "hbs": "^4.2.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive HTML Table With Pure CSS - Web Design/UI Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Financial Assitance Programs</h1>
+           
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> NAME </th>
+                        <th> CRITERIA</th>
+                        <th> CONTACT </th>
+                        <th> LINK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each supportPrograms}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.criteria}}</td>
+                        <td>{{this.contact}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>               
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <main class="table">
+        <section class="table__header">
+            <h1>Support Resources</h1>
+           
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> TITLE </th>
+                        <th> LINK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each supportResources}}
+                    <tr>
+                        <td>{{this.title}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <main class="table">
+        <section class="table__header">
+            <h1>Support Groups</h1>
+           
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> NAME </th>
+                        <th> LINK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each supportGroups}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<div class="d-flex flex-column justify-content-center w-100 h-100">
+
+	<div class="d-flex flex-column justify-content-center align-items-center">
+	
+		<div class="btn-group my-5">
+		
+		</div>
+		<a href="https://manuel.pinto.dev" class="text-decoration-none">
+			
+		</a>
+	</div>
+</div>
+</div>

@@ -1,0 +1,32 @@
+[
+    {
+      "subject": "Mathematics",
+      "grade": "9",
+      "title": "Algebra Basics",
+      "link": "https://examplelink.com/algebra-basics"
+    },
+    {
+      "subject": "Science",
+      "grade": "8",
+      "title": "Introduction to Physics",
+      "link": "https://examplelink.com/intro-to-physics"
+    },
+    {
+      "subject": "English",
+      "grade": "10",
+      "title": "Grammar and Writing Skills",
+      "link": "https://examplelink.com/grammar-writing-skills"
+    },
+    {
+      "subject": "History",
+      "grade": "7",
+      "title": "Ancient Civilizations",
+      "link": "https://examplelink.com/ancient-civilizations"
+    },
+    {
+      "subject": "Computer Science",
+      "grade": "11",
+      "title": "Programming Fundamentals",
+      "link": "https://examplelink.com/programming-fundamentals"
+    }
+  ]

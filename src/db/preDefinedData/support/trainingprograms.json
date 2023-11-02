@@ -1,0 +1,32 @@
+[
+    {
+      "type": "Skill Development",
+      "title": "PMKVY Training Programs",
+      "venue": "Various training centers across India",
+      "link": "https://www.pmkvyofficial.org/"
+    },
+    {
+      "type": "Livelihood Training",
+      "title": "NULM Skill Training Programs",
+      "venue": "Urban areas in India",
+      "link": "http://www.nulm.gov.in/"
+    },
+    {
+      "type": "Skill Development",
+      "title": "NSDC Training Programs",
+      "venue": "Various training centers and online platforms",
+      "link": "https://www.nsdcindia.org/"
+    },
+    {
+      "type": "Skill Development",
+      "title": "MSDE Skill Training Programs",
+      "venue": "Various centers and online",
+      "link": "http://www.msde.gov.in/"
+    },
+    {
+      "type": "Entrepreneurship Training",
+      "title": "Women Entrepreneurship Training",
+      "venue": "Various entrepreneurship development programs",
+      "link": "Varies by program"
+    }
+]

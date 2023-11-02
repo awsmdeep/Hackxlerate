@@ -1,0 +1,33 @@
+[
+  
+    {
+      "name": "PM Garib Kalyan Yojana",
+      "criteria": "Free food grains and pulses for vulnerable families. Financial assistance to women through Jan Dhan Yojana accounts.",
+      "contact": "Visit the official government website for program details and contact information.",
+      "link": "https://www.india.gov.in/spotlight/pradhan-mantri-garib-kalyan-yojana"
+    },
+    {
+      "name": "Pradhan Mantri Jan Dhan Yojana",
+      "criteria": "Financial inclusion through the opening of bank accounts. Direct money transfer to beneficiary accounts during COVID-19.",
+      "contact": "Contact your nearest bank or visit the official Jan Dhan Yojana website for details.",
+      "link": "https://pmjdy.gov.in/"
+    },
+    {
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "criteria": "Income support for farmers. Direct transfer of funds to bank accounts of eligible farmers.",
+      "contact": "Visit the official PM-KISAN website for program information and contact details.",
+      "link": "https://pmkisan.gov.in/"
+    },
+    {
+      "name": "Aatmanirbhar Bharat Abhiyan",
+      "criteria": "Economic relief measures for various sectors including MSMEs and migrant workers.",
+      "contact": "Check the official government announcements and news releases for details.",
+      "link": "https://pib.gov.in/PressReleasePage.aspx?PRID=1637910"
+    },
+    {
+      "name": "PM-SVANidhi",
+      "criteria": "Micro-credit support for street vendors impacted by COVID-19.",
+      "contact": "Contact your local municipal authorities or visit the PM-SVANidhi website for more information.",
+      "link": "https://pmsvanidhi.mohua.gov.in/"
+    }
+]
