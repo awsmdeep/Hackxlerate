@@ -54,8 +54,7 @@ html,body{
     align-items: center;
 }
 #nav img{
-    height: 80px;
-    
+    height: 60px;
 
 }
 
@@ -107,8 +106,6 @@ html,body{
     letter-spacing: 5px;
     transition: color 0.3s, font-size 0.3s;
     cursor:pointer;
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);;
 }
 
 #heroleft .elem h1:hover {
@@ -118,12 +115,10 @@ html,body{
 #heroleft .elem p{
     line-height: .9;
     font-family: 'Gilroy-Medium', sans-serif;
-    color: white;
+    color: #fff;
     font-weight: 100;
     font-size: 2vw;
     padding-left: 25px;
-    text-shadow: 2px 7px 5px #c2fbd7, 
-    0px -4px 10px #c2fbd7;
 
 }
 #heroleft a{
@@ -154,8 +149,6 @@ section h2 {
     font-size: 5vw;
     letter-spacing: 5px;
     cursor: pointer;
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);;
 }
 section p {
     font-size: 18px;
@@ -224,7 +217,7 @@ h1 {
     position: relative;
     display: inline-block;
     margin-right: 2px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: 400px;
     >.front,
     >.back {
@@ -233,10 +226,10 @@ h1 {
       width: inherit;
       background-size: cover!important;
       background-position: center!important;
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
       height: 220px;
       padding: 1em 2em;
-      background: #9767da;
+      background: black;
       border-radius: 10px;
       
       p {
@@ -253,8 +246,7 @@ h1 {
 }
 
 .text-shadow {
-text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-0px -4px 10px black;
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
 #heading{
@@ -277,7 +269,7 @@ a {
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 30px;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
@@ -286,7 +278,6 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-top: 20px;
 }
 
 a:hover {
@@ -300,6 +291,5 @@ a:hover {
     font-weight: 100;
     font-size: 2vw;
     padding-left: 25px;
-
 }
 
