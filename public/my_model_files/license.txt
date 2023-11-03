@@ -1,0 +1,11 @@
+Model Information:
+* title:	Realistic Tree Vol.1
+* source:	https://sketchfab.com/3d-models/realistic-tree-vol1-b2379f57cc414663a4dda4e5261113f9
+* author:	aliyeredon (https://sketchfab.com/aliyeredon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Realistic Tree Vol.1" (https://sketchfab.com/3d-models/realistic-tree-vol1-b2379f57cc414663a4dda4e5261113f9) by aliyeredon (https://sketchfab.com/aliyeredon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

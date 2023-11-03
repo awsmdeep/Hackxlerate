@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world</title>
-</head>
-<body>
-    <a href="/direct">Hello</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layered Text Effect</title>
+    <link rel="stylesheet" href="/css/tree.css" />
+  </head>
+  <body>
+    <div class="headline-container">
+      <div id="text-behind">REBUILD<br />LIFE</div>
+      <div id="text-behind-blur">REBUILD<br />LIFE</div>
+      <div id="text-front">REBUILD<br />LIFE</div>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+      <div class="container">
+        <a data-scroll href="/sup.html">
+          <div class="arrow"></div>
+        </a>
+      </div>
+      <div id="full"></div>
+    </div>
+    <script type="module" src="/js/tree.js"></script>
+    
+  </body>
 </html>
