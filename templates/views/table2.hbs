@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive HTML Table With Pure CSS - Web Design/UI Design</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="grid-bg ba-grid anim">
+  <div class="inner">
+
+    <main class="table">
+        <section class="table__header">
+            <h1>Financial Assitance Programs</h1>
+           
+           
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> NAME </th>
+                        <th> CRITERIA</th>
+                        <th> CONTACT </th>
+                        <th> LINK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each supportPrograms}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.criteria}}</td>
+                        <td>{{this.contact}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>               
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+    </div></div>
+<div class="grid-bg ba-grid anim">
+  <div class="inner">
+    <main class="table">
+        <section class="table__header">
+            <h1>Support Resources</h1>
+           
+          
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> TITLE </th>
+                        <th> LINK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each supportResources}}
+                    <tr>
+                        <td>{{this.title}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    
+</body>
+
+</html>

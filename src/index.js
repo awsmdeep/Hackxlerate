@@ -59,7 +59,7 @@ app.get('/table' ,async (req,res) => {
         method : 'GET',
         url : `${apiUrl}/support/groups`
     })
-    res.render('table', {
+    res.render('table2', {
         supportPrograms : supportPrograms.data,
         supportResources : supportResources.data,
         supportGroups : supportGroups.data
