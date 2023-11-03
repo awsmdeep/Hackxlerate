@@ -40,6 +40,10 @@ app.get('',async (req,res) => {
     });
 })
 
+app.get('/main', (req,res) => {
+    res.render('main');
+})
+
 app.get('/table' ,async (req,res) => {
 
     // Support programs
@@ -59,12 +63,61 @@ app.get('/table' ,async (req,res) => {
         method : 'GET',
         url : `${apiUrl}/support/groups`
     })
-    res.render('main', {
+    res.render('table', {
         supportPrograms : supportPrograms.data,
         supportResources : supportResources.data,
         supportGroups : supportGroups.data
     });
 })
+
+// Child Section
+app.get('/table1' ,async (req,res) => {
+
+    // Support programs
+    const educationResources = await axios({
+        method: 'GET',
+        url: `${apiUrl}/child/edures`
+    });
+
+    // Support Resources
+    const guidance = await axios({
+        method : 'GET',
+        url :  `${apiUrl}/child/guidances`
+    });
+    
+    // Support Groups
+    const accessPrograms = await axios({
+        method : 'GET',
+        url : `${apiUrl}/child/accessprograms`
+    })
+    res.render('table1', {
+        educationResources : educationResources.data,
+        guidance : guidance.data,
+        accessPrograms : accessPrograms.data
+    });
+});
+
+// Women Section
+app.get('/table2' ,async (req,res) => {
+
+    // Technical Trainings
+    const technicalTraining = await axios({
+        method: 'GET',
+        url: `${apiUrl}/women/trainingprograms`
+    });
+
+    // Resources
+    const resources = await axios({
+        method : 'GET',
+        url :  `${apiUrl}/women/womenresources`
+    });
+    res.render('table2', {
+        technicalTraining : technicalTraining.data,
+        resources : resources.data
+    });
+});
+
+
 
 //Listen Call
 app.listen(port , () => {

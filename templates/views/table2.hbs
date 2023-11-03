@@ -15,7 +15,7 @@
 
     <main class="table">
         <section class="table__header">
-            <h1>Financial Assitance Programs</h1>
+            <h1>Technical Training Programs for Women</h1>
            
            
         </section>
@@ -23,18 +23,18 @@
             <table>
                 <thead>
                     <tr>
-                        <th> NAME </th>
-                        <th> CRITERIA</th>
-                        <th> CONTACT </th>
+                        <th> TYPE </th>
+                        <th> TITLE</th>
+                        <th> VENUE </th>
                         <th> LINK</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each supportPrograms}}
+                    {{#each technicalTraining}}
                     <tr>
-                        <td>{{this.name}}</td>
-                        <td>{{this.criteria}}</td>
-                        <td>{{this.contact}}</td>
+                        <td>{{this.type}}</td>
+                        <td>{{this.title}}</td>
+                        <td>{{this.venue}}</td>
                         <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>               
                     </tr>
                     {{/each}}
@@ -47,7 +47,7 @@
   <div class="inner">
     <main class="table">
         <section class="table__header">
-            <h1>Support Resources</h1>
+            <h1>Women Support Resources</h1>
            
           
         </section>
@@ -56,14 +56,16 @@
                 <thead>
                     <tr>
                         <th> TITLE </th>
-                        <th> LINK</th>
+                        <th> DESCRIPTION</th>
+                        <th>LINK</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each supportResources}}
+                    {{#each resources}}
                     <tr>
                         <td>{{this.title}}</td>
-                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
+                        <td>{{this.description}}</td>
+                        <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>     
                     </tr>
                     {{/each}}
                 </tbody>
@@ -71,7 +73,8 @@
         </section>
     </main>
     
-    
+    </div>
+    </div>
 </body>
 
 </html>

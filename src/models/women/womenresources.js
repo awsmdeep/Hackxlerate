@@ -9,6 +9,10 @@ const womenresourcesSchema = new mongoose.Schema({
     description : {
         type : String,
         required : true
+    },
+    link : {
+        type : String,
+        required : true
     }
 } , {
     timestamps : true

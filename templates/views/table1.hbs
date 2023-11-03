@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive HTML Table With Pure CSS - Web Design/UI Design</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 
     <main class="table">
         <section class="table__header">
-            <h1>Financial Assitance Programs</h1>
+            <h1>Educational Resources For Childrens</h1>
            
            
         </section>
@@ -23,18 +23,18 @@
             <table>
                 <thead>
                     <tr>
-                        <th> NAME </th>
-                        <th> CRITERIA</th>
-                        <th> CONTACT </th>
+                        <th> SUBJECT </th>
+                        <th> GRADE</th>
+                        <th> TITLE </th>
                         <th> LINK</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each supportPrograms}}
+                    {{#each educationResources}}
                     <tr>
-                        <td>{{this.name}}</td>
-                        <td>{{this.criteria}}</td>
-                        <td>{{this.contact}}</td>
+                        <td>{{this.subject}}</td>
+                        <td>{{this.grade}}</td>
+                        <td>{{this.title}}</td>
                         <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>               
                     </tr>
                     {{/each}}
@@ -47,7 +47,7 @@
   <div class="inner">
     <main class="table">
         <section class="table__header">
-            <h1>Support Resources</h1>
+            <h1>Guidance For Childrens</h1>
            
           
         </section>
@@ -60,7 +60,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each supportResources}}
+                    {{#each guidance}}
                     <tr>
                         <td>{{this.title}}</td>
                         <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
@@ -75,7 +75,7 @@
   <div class="inner">
     <main class="table">
         <section class="table__header">
-            <h1>Support Groups</h1>
+            <h1>Access To Programs For Childrens</h1>
            
             
             
@@ -85,13 +85,15 @@
                 <thead>
                     <tr>
                         <th> NAME </th>
+                        <th> MODE</th>
                         <th> LINK</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each supportGroups}}
+                    {{#each accessPrograms}}
                     <tr>
                         <td>{{this.name}}</td>
+                        <td>{{this.mode}}</td>
                         <td><a href={{this.link}} target="_blank">{{this.link}}</a></td>
                     </tr>
                     {{/each}}
