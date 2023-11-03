@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium', sans-serif;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+
+    
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+
+}
+
+#nav{
+    pointer-events: all;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+    height: 60px;
+
+}
+
+#nleft ,#nright{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+
+}
+#nav a:hover {
+    color: #c2fbd7; /* Change the color on hover */
+
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    
+}
+
+#heroleft{
+   max-width: 60%;
+   margin-top: 2vw;
+
+
+}
+#heroleft .elem{
+    height: 9vw;
+}
+
+#heroleft .elem h1{
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+    letter-spacing: 5px;
+    transition: color 0.3s, font-size 0.3s;
+    cursor:pointer;
+}
+
+#heroleft .elem h1:hover {
+    color: #c2fbd7; /* Change the color on hover */
+    font-size: 12vw; /* Change the font size on hover */
+}
+#heroleft .elem p{
+    line-height: .9;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 2vw;
+    padding-left: 25px;
+
+}
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 2.3vw;
+    margin-top: 5vw;
+    letter-spacing: 4px;
+    font-family: "kajiro";
+    margin-left: 110px;
+}
+/* .................................................. */
+/* Center the content within each section */
+section {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px;
+    color: #fff; /* Text color */
+}
+
+/* Additional styling for the section headings and paragraphs */
+section h2 {
+    line-height: .9;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 5vw;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+section p {
+    font-size: 18px;
+}
+/* ................ */
+
+
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+
+
+h1 {
+  font-size: 2.2em;
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.flip {
+    position: relative;
+    >.front,
+    >.back {
+        display: block;
+        transition-timing-function: cubic-bezier(0.5, 1.4, 0.4, 1.3); /* Custom timing function for smoother animation */
+        transition-duration: 1s; /* Adjust the duration for a slower animation */
+        transition-property: transform, opacity;
+    }
+    >.front {
+        transform: rotateY(0deg);
+    }
+    >.back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+    }
+    &:hover {
+        >.front {
+            transform: rotateY(180deg);
+        }
+        >.back {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    }
+    &.flip-vertical {
+        >.back {
+            transform: rotateX(-180deg);
+        }
+        &:hover {
+            >.front {
+                transform: rotateX(180deg);
+            }
+            >.back {
+                transform: rotateX(0deg);
+            }
+        }
+    }
+}
+
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+    >.front,
+    >.back {
+      display: block;
+      color: white;
+      width: inherit;
+      background-size: cover!important;
+      background-position: center!important;
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      height: 220px;
+      padding: 1em 2em;
+      background: black;
+      border-radius: 10px;
+      
+      p {
+        line-height: 1.5;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: black;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    padding-left: 25px;
+    padding-bottom: 20px;
+      }
+    }
+}
+
+.text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+#heading{
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 5vw;
+    letter-spacing: 5px;
+
+}
+
+
+/* CSS */
+button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.class{
+    line-height: .9;
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 2vw;
+    padding-left: 25px;
+}
+
